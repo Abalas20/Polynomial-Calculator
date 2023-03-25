@@ -29,4 +29,9 @@ public class DivisionResult {
     public void setQuotient(Polynomial quotient) {
         this.quotient = quotient;
     }
+
+    @Override
+    public String toString() {
+        return "Quotient: " + quotient.toString() + ", Reminder: " + remainder.toString();
+    }
 }

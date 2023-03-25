@@ -1,6 +1,7 @@
 package ro.tuc;
 
 import ro.tuc.GUI.GUI;
+import ro.tuc.data_models.DivisionResult;
 import ro.tuc.data_models.Polynomial;
 import ro.tuc.data_models.PolynomialBuilder;
 import ro.tuc.math.PolynomialOperations;
@@ -91,7 +92,7 @@ public class LogicController implements ActionListener, KeyListener {
         } else {
             polynomial1 = polynomialBuilder.makePolynomial(gui.getPolynomialTwo());
         }
-        gui.setResultText(operations.integration(polynomial1).toString(true));
+        gui.setResultText(operations.integration(polynomial1).toString(true) + " + C");
     }
 
     @Override
