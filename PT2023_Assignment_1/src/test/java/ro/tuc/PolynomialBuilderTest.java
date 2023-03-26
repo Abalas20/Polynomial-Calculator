@@ -3,7 +3,7 @@ package ro.tuc;
 import org.junit.Test;
 import ro.tuc.data_models.Monomial;
 import ro.tuc.data_models.Polynomial;
-import ro.tuc.data_models.PolynomialBuilder;
+import ro.tuc.control_unit.PolynomialBuilder;
 
 import java.math.BigDecimal;
 

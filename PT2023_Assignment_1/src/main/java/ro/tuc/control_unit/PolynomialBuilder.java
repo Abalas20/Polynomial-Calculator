@@ -1,5 +1,7 @@
-package ro.tuc.data_models;
+package ro.tuc.control_unit;
 
+import ro.tuc.data_models.Monomial;
+import ro.tuc.data_models.Polynomial;
 import ro.tuc.math.PolynomialAdder;
 
 import java.math.BigDecimal;

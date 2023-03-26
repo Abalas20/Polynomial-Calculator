@@ -16,6 +16,9 @@ public class PolynomialDivider {
         if (polynomial1.isEmpty() || polynomial2.isEmpty()) {
             throw new IllegalArgumentException("Can't divide empty polynomials");
         }
+        if (polynomial2.isZero()) {
+            throw new IllegalArgumentException("Can't divide by zero");
+        }
         Polynomial quotient = new Polynomial();
         Polynomial remainder = ADDER.add(polynomial1, new Polynomial());
         while (!remainder.isEmpty() && remainder.getHighestDegree() >= polynomial2.getHighestDegree()) {

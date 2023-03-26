@@ -1,5 +1,6 @@
 package ro.tuc.data_models;
 
+import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
@@ -35,6 +36,13 @@ public class Polynomial {
     public int getHighestDegree() {
         TreeMap<Integer,Monomial> sortedMap = new TreeMap<>(polynomial);
         return sortedMap.lastKey();
+    }
+
+    public boolean isZero() {
+        if (polynomial.size() == 1) {
+            return polynomial.get(getHighestDegree()).getDegree() == 0 && polynomial.get(getHighestDegree()).getCoefficient().compareTo(BigDecimal.ZERO) == 0;
+        }
+        return false;
     }
 
     @Override

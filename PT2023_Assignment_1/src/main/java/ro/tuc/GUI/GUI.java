@@ -1,6 +1,6 @@
 package ro.tuc.GUI;
 
-import ro.tuc.LogicController;
+import ro.tuc.control_unit.LogicController;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,17 +9,17 @@ import java.awt.event.KeyEvent;
 
 public class GUI extends JFrame {
     private static final String[] OPERATIONS_NAME = {"Add", "Subtract", "Multiply", "Divide", "Derivative", "Integrate"};
-    JTextField polynomial1Text = new JTextField();
-    JTextField polynomial2Text = new JTextField();
-    JTextField resultText = new JTextField();
+    private  JTextField polynomial1Text = new JTextField();
+    private  JTextField polynomial2Text = new JTextField();
+    private  JTextField resultText = new JTextField();
     public JRadioButton firstPolynomialOn = new JRadioButton();
-    JRadioButton secondPolynomialOn = new JRadioButton();
-    JButton[] operations = new JButton[6];
-    JButton[] leftHalfButton = new JButton[12];
-    JPanel leftPanel = new JPanel(new GridLayout(4, 3));
-    JButton[] rightHalfButton = new JButton[4];
-    JPanel rightPanel = new JPanel(new GridLayout(4, 1));
-    JButton spaceButton = new JButton(" ");
+    private JRadioButton secondPolynomialOn = new JRadioButton();
+    private JButton[] operations = new JButton[6];
+    private JButton[] leftHalfButton = new JButton[12];
+    private JPanel leftPanel = new JPanel(new GridLayout(4, 3));
+    private JButton[] rightHalfButton = new JButton[4];
+    private JPanel rightPanel = new JPanel(new GridLayout(4, 1));
+    private JButton spaceButton = new JButton(" ");
 
     public GUI(LogicController controller) {
         setTitle("Polynomial Calculator");

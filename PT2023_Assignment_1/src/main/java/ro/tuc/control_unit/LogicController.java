@@ -1,9 +1,7 @@
-package ro.tuc;
+package ro.tuc.control_unit;
 
 import ro.tuc.GUI.GUI;
-import ro.tuc.data_models.DivisionResult;
 import ro.tuc.data_models.Polynomial;
-import ro.tuc.data_models.PolynomialBuilder;
 import ro.tuc.math.PolynomialOperations;
 
 import java.awt.event.ActionEvent;
@@ -13,8 +11,8 @@ import java.awt.event.KeyListener;
 
 public class LogicController implements ActionListener, KeyListener {
     private final GUI gui;
-    private PolynomialOperations operations;
-    private PolynomialBuilder polynomialBuilder;
+    private final PolynomialOperations operations;
+    private final PolynomialBuilder polynomialBuilder;
 
     public LogicController() {
         gui = new GUI(this);
