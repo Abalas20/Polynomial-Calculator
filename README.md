@@ -147,7 +147,7 @@ cleaner and more organized code structure.
 > inputting coefficients for a polynomial. The GUI class works together
 > with the LogicController class to execute operations on polynomials.
 >
-> **[Control Unit]**
+**[Control Unit]**
 >
 > •The PolynomialBuilder class is responsible for constructing a
 > Polynomial object based on a given input string that follows a
